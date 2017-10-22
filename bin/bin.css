@@ -1,0 +1,43 @@
+.icon {
+  cursor: pointer;
+}
+
+.icon__bin {
+  position: absolute;
+
+  width: 9px;
+  height: 8px;
+
+  border: 1px solid orangered;
+  border-radius: 0 0 2px 2px;
+  background-color: orangered;
+}
+
+.icon__bin:before {
+  position: absolute;
+  top: -4px;
+  left: -3px;
+
+  width: 15px;
+  height: 2px;
+
+  content: '';
+
+  border-radius: 5px;
+  background-color: orangered;
+}
+
+.icon__bin:after {
+  position: absolute;
+  top: -7px;
+  left: 0;
+
+  width: 9px;
+  height: 4px;
+
+  content: '';
+
+  border-width: 1px solid orangered;
+  border-radius: 2px 2px 0 0;
+  background-color: orangered;
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="stepper/stepper.css">
+    <link rel="stylesheet" href="bin/bin.css">
+    <link rel="stylesheet" href="userForm/userForm.css">
+    <link rel="stylesheet" href="userList/userList.css">
+</head>
+<body>
+
+<div class="page column">
+
+    <nav id="stepper"></nav>
+
+    <section>
+        <h1>Add colleagues to your company</h1>
+
+        <div class="sheet">
+            <p>
+                You can add <b><span id="add-collegue-counter"></span> colleagues</b> to your company.
+            </p>
+            <p>
+                You can up to 10 company members, and there are currently <span id="current-colleague-counter"></span>.
+            </p>
+            <form id="newColleaguesForm" class="userForm"></form>
+            <span id="addNewColleague" class="clickable clickable--blue" role="button">+ Add another colleague</span>
+            <div id="newColleaguesFormButtons" class="column column--center">
+                <button id="addExistingColleaguesButton" type="button" class="button button--blue">Add a colleage</button>
+                <span id="resetNewColleaguesForm" class="clickable clickable--gray" role="button">Reset</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Existing colleagues</h2>
+        <div id="existingColleagesList" class="userList"></div>
+    </section>
+
+</div>
+
+<script src="userStore/userStore.js"></script>
+<script src="bin/bin.js"></script>
+<script src="userForm/userForm.js"></script>
+<script src="userList/userList.js"></script>
+<script src="stepper/stepper.js"></script>
+<script src="text/text.js"></script>
+<script src="app.js"></script>
+
+<script>
+    app.render();
+</script>
+
+</body>
+</html>

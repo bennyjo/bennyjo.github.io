@@ -1,0 +1,104 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+
+  display: flex;
+
+  background-color: snow;
+
+  justify-content: space-around;
+}
+
+h1,
+h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+#newColleaguesFormButtons {
+  margin-top: 20px;
+}
+
+#addExistingColleaguesButton {
+  margin-bottom: 10px;
+}
+
+.page {
+  width: 90%;
+  min-width: 500px;
+  max-width: 760px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column--center {
+  align-items: center;
+}
+
+.sheet {
+  padding: 1rem;
+
+  border-radius: 1px;
+  background-color: white;
+  box-shadow: 0 2px 5px silver;
+}
+
+.clickable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.clickable--blue {
+  color: dodgerblue;
+}
+
+.clickable--blue:hover {
+  color: darkblue;
+}
+
+.clickable--gray {
+  color: gray;
+}
+
+.clickable--gray:hover {
+  color: darkslategrey;
+}
+
+.button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+
+  display: inline-block;
+
+  padding: 0.5rem 1rem;
+
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button--blue {
+  color: white;
+  background-color: dodgerblue;
+}
+
+.button--blue:hover {
+  border-color: #005a9c;
+  background-color: #005a9c;
+}
+
+.button--blue:focus {
+  box-shadow: 0 0 0 2px rgba(2,117,216,0.5);
+}
